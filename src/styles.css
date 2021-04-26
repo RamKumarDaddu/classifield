@@ -14,7 +14,7 @@ body {
 }
 .login-container {
     width: 100%;
-    height: 600px;
+    height: 100vh;
     background-color: #d7d7d7;
     display: flex;
     align-items: center;
@@ -23,10 +23,65 @@ body {
 
 .login-div {
     width: 30%;
-    height: 70%;
+    /* height: 70%; */
     background-color: #ffffff;
     border-radius: 5px;
 }
 .signup-div {
     height: auto;
+}
+.close {
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    font-size: 1.2vw;
+}
+.alert-position {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, 8%);
+}
+.required-style {
+    color: red;
+}
+
+@media screen and (min-width: 320px) {
+   .signup-div {
+        width: 60%;
+        /* background-color: blue; */
+    }
+    .login-div {
+        width: 70%;
+        /* background-color: blue; */
+    }
+    .close {
+        font-size: 3.5vw;
+    }
+}
+@media screen and (min-width: 768px) {
+    .signup-div {
+        width: 40%;
+        /* background-color: thistle; */
+    }
+    .login-div {
+        width: 50%;
+        /* background-color: black; */
+    }
+    .close {
+        font-size: 2.5vw;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .signup-div {
+        width: 30%;
+        /* background-color: tomato; */
+    }
+    .login-div {
+        width: 30%;
+        /* background-color: yellow; */
+    }
+    .close {
+        font-size: 1.5vw;
+    }
 }

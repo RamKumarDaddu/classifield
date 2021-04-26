@@ -5,8 +5,8 @@
         <img src="../../assets/images/logo.png" width="200" alt="" >
       </a>
       <form class="d-flex mr-5">
-        <button class="btn btn-outline-primary c-btn" type="submit" > Log in </button>
-        <button class="btn btn-default c-default ml-2" type="submit"> Sign up </button>
+        <button routerLink="/login" (click)="login();" class="btn btn-outline-primary c-btn" type="submit" > Log in </button>
+        <button routerLink="/signup" (click)="signup();" class="btn btn-default c-default ml-2" type="submit"> Sign up </button>
       </form>
     </div>
 </nav>
